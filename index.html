@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Döviz_Çevirici</title>
+  </head>
+  <body>
+    <button
+      id="theme-toggle"
+      style="
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: #007bff;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      "
+    >
+      Tema Değiştir
+    </button>
+    <div class="container">
+      <h1>Döviz Çevirici</h1>
+      <div class="navbar">
+        <select id="currencyFirst">
+          <option value="USD" selected>USD</option>
+          <option value="EUR">EUR</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+        </select>
+        <input type="number" id="count" value="1" min="0" />
+      </div>
+      <div class="navbar">
+        <select id="currencySecond">
+          <option value="TRY" selected>TL</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="JPG">JPG</option>
+        </select>
+        <span id="equal">85</span>
+      </div>
+
+      <p class="exchangeRate" id="exchangeRate"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
